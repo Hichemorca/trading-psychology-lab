@@ -249,7 +249,7 @@
                 <span class="section-tag">الباقات</span>
                 <h2 class="section-title">اختر الباقة المناسبة لك</h2>
                 <p class="section-description">
-                    جميع الباقات تشمل نسخة تجريبية مجانية لمدة 7 أيام. لا حاجة لبطاقة ائتمان.
+                    باقة Pro تشمل نسخة تجريبية مجانية لمدة 7 أيام. Elite و Ultimate للشراء المباشر.
                 </p>
             </div>
             <div class="pricing-grid">
@@ -302,7 +302,7 @@
                         <li class="feature-item">✅ تقارير Elite المتقدمة</li>
                     </ul>
                     <div class="pricing-footer">
-                        <a href="#" class="btn btn-primary btn-block" onclick="selectPlan('Elite')">تحميل النسخة التجريبية</a>
+                        <a href="#" class="btn btn-primary btn-block" onclick="selectPlan('Elite')">شراء Elite</a>
                     </div>
                 </div>
 
@@ -328,7 +328,7 @@
                         <li class="feature-item">✅ دعم فني ذو أولوية</li>
                     </ul>
                     <div class="pricing-footer">
-                        <a href="#" class="btn btn-primary btn-block" onclick="selectPlan('Ultimate')">تحميل النسخة التجريبية</a>
+                        <a href="#" class="btn btn-primary btn-block" onclick="selectPlan('Ultimate')">شراء Ultimate</a>
                     </div>
                 </div>
             </div>
@@ -396,7 +396,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>TradingPsych Lab يتصل بمنصة MT4/MT5 الخاصة بك عبر Expert Advisor بسيط. يراقب صفقاتك في الوقت الفعلي ويكتشف الأنماط السلوكية السلبية كالانتقام ومطاردة السعر، ثم يرسل تنبيهات فورية لمنعك من القرارات العاطفية.</p>
+                        <p>TradingPsych Lab يتصل بمنصة MT4/MT5 الخاصة بك. يراقب صفقاتك في الوقت الفعلي ويكتشف الأنماط السلوكية السلبية كالانتقام ومطاردة السعر، ثم يرسل تنبيهات فورية لمنعك من القرارات العاطفية.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -414,7 +414,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>حالياً يدعم TradingPsych Lab منصتي MetaTrader 4 وMetaTrader 5. نعمل على إضافة دعم لـ cTrader وTradingView قريباً.</p>
+                        <p>حالياً يدعم TradingPsych Lab منصتي MetaTrader 4 وMetaTrader 5.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -423,7 +423,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>نعم بالكامل. بياناتك التداولية لا تُرسل إلى خوادمنا. كل المعالجة تتم محلياً على جهازك. نلتزم بخصوصية 100%.</p>
+                        <p>نعم بالكامل. نستخدم كلمة مرور المستثمر (للقراءة فقط). بياناتك لا تغادر جهازك.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -441,7 +441,7 @@
                         <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>نعم! كل الباقات تأتي مع 7 أيام تجريبية مجانية بدون الحاجة لبطاقة ائتمان. يمكنك تجربة كامل الميزات واتخاذ قرارك بعدها.</p>
+                        <p>نعم! باقة Pro تأتي مع 7 أيام تجريبية مجانية. Elite و Ultimate للشراء المباشر.</p>
                     </div>
                 </div>
             </div>
@@ -494,6 +494,67 @@
             </div>
         </div>
     </footer>
+
+    <!-- Purchase Modal -->
+    <div class="modal" id="purchaseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">🎯 جاهز للاحتراف؟</h2>
+                <button class="modal-close" onclick="closePurchaseModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description" id="modalDescription">
+                    <strong>اختر باقتك المناسبة</strong><br>
+                    ارتقِ بتداولك مع إحدى باقاتنا المميزة:
+                </p>
+
+                <div class="modal-plans">
+                    <div class="modal-plan" onclick="selectModalPlan('Pro')">
+                        <div class="modal-plan-name">Pro</div>
+                        <div class="modal-plan-price">$29<small>/شهر</small></div>
+                        <div class="modal-plan-features">
+                            ✅ 9 كواشف سلوكية<br>
+                            ✅ تقارير الجلسة<br>
+                            ✅ تحليل "ماذا لو؟"
+                        </div>
+                    </div>
+                    <div class="modal-plan featured" onclick="selectModalPlan('Elite')">
+                        <div class="modal-plan-badge">الأكثر قيمة</div>
+                        <div class="modal-plan-name">Elite</div>
+                        <div class="modal-plan-price">$49<small>/شهر</small></div>
+                        <div class="modal-plan-features">
+                            ✅ جميع ميزات Pro<br>
+                            ✅ غرفة التداول الصامتة<br>
+                            ✅ Circuit Breaker<br>
+                            ✅ قفل الهدف والخسارة
+                        </div>
+                    </div>
+                    <div class="modal-plan" onclick="selectModalPlan('Ultimate')">
+                        <div class="modal-plan-name">Ultimate</div>
+                        <div class="modal-plan-price">$79<small>/شهر</small></div>
+                        <div class="modal-plan-features">
+                            ✅ جميع ميزات Elite<br>
+                            ✅ AI Predictor<br>
+                            ✅ تحليل أنماط الخسارة<br>
+                            ✅ توصيات مخصصة
+                        </div>
+                    </div>
+                </div>
+
+                <p class="modal-note" id="modalNote">
+                    ⚡ خصم 20% لأول شهر عند الشراء الآن!
+                </p>
+
+                <a href="#" id="modalWhatsappBtn" class="btn btn-primary btn-block modal-whatsapp-btn" target="_blank">
+                    <span>💬 تواصل عبر واتساب للشراء</span>
+                </a>
+
+                <p class="modal-later" onclick="closePurchaseModal()">
+                    سأفكر لاحقاً
+                </p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
