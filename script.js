@@ -61,7 +61,7 @@ const DOWNLOAD_URLS = {
 
 // مفاتيح ترخيص تجريبية (7 أيام) - Pro فقط
 const TRIAL_LICENSE_KEYS = {
-    'Pro': UHJvfHRlc3QyMjU1QGdtYWlsLmNvbXwyMDI2LTA0LTIyfDIwMjYtMDQtMjl8QU5ZfFNUQU5EQVJEfE5PTkV8NDM5ZjhhYTZjZTYxYTQzZQ==
+    'Pro': 'UHJvfHRlc3QyMjU1QGdtYWlsLmNvbXwyMDI2LTA0LTIyfDIwMjYtMDQtMjl8QU5ZfFNUQU5EQVJEfE5PTkV8NDM5ZjhhYTZjZTYxYTQzZQ=='
 };
 
 // متغير لتخزين الباقة المختارة مؤقتاً
