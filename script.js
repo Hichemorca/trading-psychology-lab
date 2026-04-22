@@ -74,13 +74,21 @@ function selectPlan(plan) {
     document.getElementById('selectedPlanInput').value = plan;
     
     if (plan === 'Pro') {
-        const formSection = document.querySelector('.cta');
-        if (formSection) {
-            formSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
         const emailInput = document.getElementById('emailInput');
+        
+        // تحديث placeholder
         emailInput.placeholder = `أدخل بريدك الإلكتروني لتحميل نسخة ${plan} التجريبية`;
-        emailInput.focus();
+        
+        // تمرير إلى القسم
+        const ctaSection = document.querySelector('.cta');
+        if (ctaSection) {
+            ctaSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        // التركيز على حقل الإيميل بعد التمرير
+        setTimeout(() => {
+            emailInput.focus();
+        }, 600);
         
         setTimeout(() => {
             alert(`📧 الرجاء إدخال بريدك الإلكتروني أولاً للحصول على مفتاح الترخيص.\n\nبعد ذلك سيبدأ تحميل نسخة ${plan} تلقائياً.`);
