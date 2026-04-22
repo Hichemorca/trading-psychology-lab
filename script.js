@@ -163,7 +163,7 @@ function closeLicenseModal() {
     
     if (pendingDownloadUrl) {
         setTimeout(() => {
-            window.open(pendingDownloadUrl, '_blank');
+            window.location.href = pendingDownloadUrl;
             pendingDownloadUrl = null;
         }, 300);
     }
