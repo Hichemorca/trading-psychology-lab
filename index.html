@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TradingPsych Lab - مختبر نفسية التداول</title>
+    <!-- SEO Meta Description (مُضافة للتحسين) -->
+    <meta name="description" content="منصة TradingPsych Lab: أول أداة عربية تعمل بالذكاء الاصطناعي لتحليل سلوك المتداول وحمايته من الانتقام والتداول العاطفي. جرب مجاناً لمدة 7 أيام.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +18,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <img src="orca-logo.png" alt="Orca Logo" class="logo-img">
+                    <img src="orca-logo.png" alt="شعار TradingPsych Lab" class="logo-img">
                     <span class="logo-text">TradingPsych Lab</span>
                 </div>
                 <ul class="nav-links">
@@ -112,7 +114,8 @@
                         <div class="db-alert">
                             <span class="db-alert-icon">🛡️</span>
                             <div>
-                                <div class="db-alert-title">محمي — لا انتقام مكتشف اليوم</div>
+                                <!-- تحسين لغوي طفيف -->
+                                <div class="db-alert-title">الحالة: آمن — لم يتم رصد أي تداول انتقامي اليوم</div>
                                 <div class="db-alert-sub">آخر تحديث: منذ 2 دقيقة</div>
                             </div>
                             <span class="db-alert-badge">✓</span>
@@ -474,7 +477,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="orca-logo.png" alt="Orca Logo" class="logo-img">
+                    <img src="orca-logo.png" alt="شعار TradingPsych Lab" class="logo-img">
                     <span class="logo-text">TradingPsych Lab</span>
                 </div>
                 <p class="footer-description">
@@ -552,6 +555,33 @@
                 <p class="modal-later" onclick="closePurchaseModal()">
                     سأفكر لاحقاً
                 </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- License Key Modal (إضافة جديدة) -->
+    <div class="modal" id="licenseModal">
+        <div class="modal-content license-modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">🔑 مفتاح الترخيص التجريبي</h2>
+                <button class="modal-close" onclick="closeLicenseModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="licenseModalEmail" style="color: var(--gray-light); margin-bottom: 20px; text-align: center;"></p>
+                
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600;">مفتاح الترخيص:</label>
+                    <div style="display: flex; gap: 8px;">
+                        <input type="text" id="licenseKeyInput" readonly style="flex: 1; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,215,0,0.3); color: var(--white); padding: 12px 16px; border-radius: 50px; font-family: monospace; font-size: 13px; direction: ltr; text-align: center;">
+                        <button onclick="copyLicenseKey()" class="btn btn-primary" style="padding: 12px 20px;">📋 نسخ</button>
+                    </div>
+                </div>
+                
+                <p style="color: var(--success); font-size: 13px; margin-bottom: 20px;">
+                    ⏳ صلاحية 7 أيام. سيتم تحميل البرنامج تلقائياً.
+                </p>
+                
+                <button onclick="closeLicenseModal()" class="btn btn-ghost btn-block" style="margin-top: 10px;">حسناً، فهمت</button>
             </div>
         </div>
     </div>
