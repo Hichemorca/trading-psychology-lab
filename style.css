@@ -1189,3 +1189,119 @@ body {
     .modal-title { font-size: 20px; }
     .modal-body, .modal-header { padding: 18px 18px; }
 }
+/* ══════════════════════════════════════
+   ULTIMATE PROMO
+══════════════════════════════════════ */
+.ultimate-promo {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0d1535 0%, #1a1040 50%, #0d1535 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.ultimate-promo::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.promo-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.promo-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffd700, #ffb347);
+    color: #0a0e20;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.promo-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffd700;
+    margin-bottom: 16px;
+}
+
+.promo-description {
+    color: #8890b0;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.promo-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.promo-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #b0b8d0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.promo-icon {
+    font-size: 24px;
+}
+
+@media (max-width: 640px) {
+    .promo-title { font-size: 28px; }
+    .promo-features { gap: 15px; }
+}
+/* ══════════════════════════════════════
+   ULTIMATE PROMO
+══════════════════════════════════════ */
+.ultimate-promo {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0d1535 0%, #1a1040 50%, #0d1535 100%);
+    position: relative;
+    overflow: hidden;
+}
+.ultimate-promo::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(255, 215, 0, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+.promo-content { text-align: center; max-width: 700px; margin: 0 auto; position: relative; z-index: 1; }
+.promo-badge { display: inline-block; background: linear-gradient(135deg, #ffd700, #ffb347); color: #0a0e20; padding: 6px 18px; border-radius: 50px; font-weight: 800; font-size: 13px; margin-bottom: 20px; }
+.promo-title { font-size: 36px; font-weight: 900; color: #ffd700; margin-bottom: 16px; }
+.promo-description { color: #8890b0; font-size: 16px; line-height: 1.8; margin-bottom: 30px; }
+.promo-features { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 35px; }
+.promo-feature { display: flex; align-items: center; gap: 8px; color: #b0b8d0; font-weight: 600; font-size: 14px; }
+.promo-icon { font-size: 24px; }
+
+/* ══════════════════════════════════════
+   ULTIMATE PRICING CARD
+══════════════════════════════════════ */
+.ultimate-card { border-color: #ffd700 !important; background: rgba(255,215,0,0.05) !important; box-shadow: 0 0 30px rgba(255,215,0,0.15) !important; }
+.ultimate-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #ffd700, #ffb347); color: #0a0e20; padding: 5px 20px; border-radius: 50px; font-weight: 800; font-size: 13px; white-space: nowrap; }
+.ultimate-name { background: linear-gradient(135deg, #ffd700, #ffb347); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.ultimate-btn { background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%) !important; box-shadow: 0 6px 24px rgba(255,215,0,0.4) !important; }
+
+/* ULTIMATE MODAL */
+.ultimate-modal-plan { border-color: rgba(255,215,0,0.5) !important; background: rgba(255,215,0,0.05) !important; }
+.ultimate-modal-badge { background: linear-gradient(135deg, #ffd700, #ffb347) !important; color: #0a0e20 !important; }
+
+@media (max-width: 640px) {
+    .promo-title { font-size: 28px; }
+    .promo-features { gap: 15px; }
+}
