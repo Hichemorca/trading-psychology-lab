@@ -1,0 +1,27 @@
+{
+  "name": "TradingPsych Lab",
+  "short_name": "TradingPsych",
+  "description": "أول منصة عربية لتحليل سلوك التداول وحماية المتداولين من القرارات العاطفية",
+  "start_url": "/trading-psychology-lab/",
+  "scope": "/trading-psychology-lab/",
+  "display": "standalone",
+  "background_color": "#070b1f",
+  "theme_color": "#ffd700",
+  "orientation": "portrait-primary",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "orca-logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "orca-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
