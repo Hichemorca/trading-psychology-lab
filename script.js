@@ -54,9 +54,9 @@ async function sendTelegramNotification(email, plan) {
 
 // روابط التحميل المباشرة
 const DOWNLOAD_URLS = {
-    'Pro': 'https://github.com/Hichemorca/trading-psych-releases/raw/main/TradingPsychLab_Pro.exe',
-    'Elite': 'https://github.com/Hichemorca/trading-psych-releases/raw/main/TradingPsychLab_Elite.exe',
-    'Ultimate': 'https://github.com/Hichemorca/trading-psych-releases/raw/main/TradingPsychLab_Ultimate.exe'
+    'Pro': 'https://github.com/Hichemorca/trading-psych-releases/raw/main/releases/windows/latest/TradingPsychLab_Pro.exe',
+    'Elite': 'https://github.com/Hichemorca/trading-psych-releases/raw/main/releases/windows/latest/TradingPsychLab_Elite.exe',
+    'Ultimate': 'https://github.com/Hichemorca/trading-psych-releases/raw/main/releases/windows/latest/TradingPsychLab_Ultimate.exe'
 };
 
 // مفاتيح ترخيص تجريبية (7 أيام) - Pro فقط
